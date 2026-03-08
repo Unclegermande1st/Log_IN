@@ -1,13 +1,30 @@
-const container = document.querySelector('.container');
-const LoginLink = document.querySelector('.SignInLink');
-const RegisterLink = document.querySelector('.SignUpLink');
+document.addEventListener("DOMContentLoaded", () => {
 
-RegisterLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    container.classList.add('active');
+const container = document.querySelector(".container")
+
+const signUpLink = document.querySelector(".SignUpLink")
+const signInLink = document.querySelector(".SignInLink")
+
+if(signUpLink){
+
+signUpLink.addEventListener("click", (e) => {
+
+e.preventDefault()
+container.classList.add("active")
+
 })
 
-LoginLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    container.classList.remove('active');
+}
+
+if(signInLink){
+
+signInLink.addEventListener("click", (e) => {
+
+e.preventDefault()
+container.classList.remove("active")
+
+})
+
+}
+
 })

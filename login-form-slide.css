@@ -287,4 +287,50 @@ body {
     transform: rotate(0deg) skewY(-41deg);
     transition-delay: 1.2s;
 }
+/* RESPONSIVE FIX */
 
+@media (max-width: 900px){
+
+.container{
+width:90%;
+height:auto;
+min-height:500px;
+}
+
+.form-box,
+.info-content{
+width:100%;
+position:relative;
+padding:40px;
+text-align:center;
+}
+
+.info-content.Login,
+.info-content.Signup{
+padding:40px;
+text-align:center;
+}
+
+}
+
+
+@media (max-width:480px){
+
+.container{
+border:none;
+box-shadow:none;
+}
+
+.form-box{
+padding:30px 20px;
+}
+
+.info-content h2{
+font-size:26px;
+}
+
+.info-content p{
+font-size:14px;
+}
+
+}

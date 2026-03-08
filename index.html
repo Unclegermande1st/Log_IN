@@ -1,81 +1,184 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="mwananyina">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="font-icons/all.min.css">
-    <link rel="stylesheet" href="font-icons/fontawesome.min.css">
-    <link rel="stylesheet" type="text/css" href="login-form-slide.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Mwananyina Bwalya">
+
+<title>Login Form</title>
+
+<link rel="stylesheet" href="font-icons/all.min.css">
+<link rel="stylesheet" href="login-form-slide.css">
+
+<script src="login-form-slide.js" defer></script>
+
 </head>
+
 <body>
-    <div class="container">
-        <div class="curved-shape"></div>
-        <div class="curved-shape2"></div>
-        <div class="form-box Login">
-            <h2 class="animation" style="--D:0; --S:21">login</h2>
-            <form action="#">
-                <div class="input-box animation" style="--D:1; --S:22">
-                    <input type="text" name="username" />
-                    <label for="">Username</label>
-                    <i class="fa-solid fa-user"></i>
-                </div>
 
-                <div class="input-box animation" style="--D:2; --S:23">
-                    <input type="password" name="password" />
-                    <label for="">Password</label>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
+<div class="container">
 
-                <div class="input-box animation" style="--D:3; --S:24">
-                    <button class="btn" type="submit">login</button>
-                </div>
+<div class="curved-shape"></div>
+<div class="curved-shape2"></div>
 
-                <div class="regi-link animation" style="--D:4; --S:25">
-                    <p>Don't have an account ? <a href="#" class="SignUpLink">sign Up</a></p>
-                </div>
-            </form>
-        </div>
-        <div class="info-content Login">
-            <h2 class="animation" style="--D:0; --S:20">WELCOME BACK!</h2>
-            <p class="animation" style="--D:1; --S:21">Lorem ipsum dolor sit amet, consectetur adipisicing elit console.</p>
-        </div>
+<!-- LOGIN FORM -->
 
-        <div class="form-box Signup">
-            <h2 class="animation" style="--li:17; --S:0;">sign Up</h2>
-            <form id="loginForm">
-                <div class="input-box animation" style="--li:18; --S:1;">
-                    <input id="username" name="username" type="text" required>
-                    <label for="username">Username</label>
-                    <i class="fa-solid fa-user"></i>
-                </div>
+<div class="form-box Login">
 
-                <div class="input-box animation" style="--li:19; --S:1;">
-                    <input id="email" name="email" type="email" required>
-                    <label for="email">Email</label>
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
+<h2 class="animation" style="--D:0; --S:21">Login</h2>
 
-                <div class="input-box animation" style="--li:20; --S:2;">
-                    <input id="password" name="password" type="password" required>
-                    <label for="password">Password</label>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
+<form id="loginForm">
 
-                <div class="input-box animation" style="--li:21; --S:3;">
-                    <button class="btn" type="submit">sign Up</button>
-                </div>
-                <div class="regi-link animation" style="--li:22; --S:4;">
-                    <p>Don't have an account ? <a href="#" class="SignInLink">sign In</a></p>
-                </div>
-            </form>
-        </div>
-        <div class="info-content Signup">
-            <h2 class="animation" style="--li:17; --S:0;">Join with Us?</h2>
-            <p class="animation" style="--li:18; --S:1;">Lorem ipsum dolor sit amet, consectetur adipisicing elit console.</p>
-        </div>
-    </div>
-    <script src="login-form-slide.js"></script>
+<div class="input-box animation" style="--D:1; --S:22">
+
+<input
+type="text"
+id="login-username"
+name="username"
+required
+autocomplete="username">
+
+<label for="login-username">Username</label>
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+
+<div class="input-box animation" style="--D:2; --S:23">
+
+<input
+type="password"
+id="login-password"
+name="password"
+required
+minlength="6"
+autocomplete="current-password">
+
+<label for="login-password">Password</label>
+<i class="fa-solid fa-lock"></i>
+
+</div>
+
+
+<div class="input-box animation" style="--D:3; --S:24">
+<button class="btn" type="submit">Login</button>
+</div>
+
+
+<div class="regi-link animation" style="--D:4; --S:25">
+
+<p>
+Don't have an account ?
+<a href="#" class="SignUpLink">Sign Up</a>
+</p>
+
+</div>
+
+</form>
+
+</div>
+
+
+<!-- LOGIN INFO -->
+
+<div class="info-content Login">
+
+<h2 class="animation" style="--D:0; --S:20">WELCOME BACK!</h2>
+
+<p class="animation" style="--D:1; --S:21">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</p>
+
+</div>
+
+
+<!-- SIGNUP FORM -->
+
+<div class="form-box Signup">
+
+<h2 class="animation" style="--li:17; --S:0;">Sign Up</h2>
+
+<form id="signupForm">
+
+<div class="input-box animation" style="--li:18; --S:1;">
+
+<input
+type="text"
+id="signup-username"
+name="username"
+required
+autocomplete="username">
+
+<label for="signup-username">Username</label>
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+
+<div class="input-box animation" style="--li:19; --S:1;">
+
+<input
+type="email"
+id="signup-email"
+name="email"
+required
+autocomplete="email">
+
+<label for="signup-email">Email</label>
+<i class="fa-solid fa-envelope"></i>
+
+</div>
+
+
+<div class="input-box animation" style="--li:20; --S:2;">
+
+<input
+type="password"
+id="signup-password"
+name="password"
+required
+minlength="6"
+autocomplete="new-password">
+
+<label for="signup-password">Password</label>
+<i class="fa-solid fa-lock"></i>
+
+</div>
+
+
+<div class="input-box animation" style="--li:21; --S:3;">
+<button class="btn" type="submit">Sign Up</button>
+</div>
+
+
+<div class="regi-link animation" style="--li:22; --S:4;">
+
+<p>
+Already have an account ?
+<a href="#" class="SignInLink">Sign In</a>
+</p>
+
+</div>
+
+</form>
+
+</div>
+
+
+<!-- SIGNUP INFO -->
+
+<div class="info-content Signup">
+
+<h2 class="animation" style="--li:17; --S:0;">Join with Us?</h2>
+
+<p class="animation" style="--li:18; --S:1;">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</p>
+
+</div>
+
+</div>
+
 </body>
 </html>
